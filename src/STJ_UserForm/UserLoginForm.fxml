@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="window" blendMode="SRC_OVER" minHeight="200.0" prefHeight="220.0" prefWidth="320.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="STJ_UserForm.UserLoginFormController">
+  <children>
+    <Label id="null" alignment="TOP_CENTER" layoutX="66.0" layoutY="14.0" text="Traverse Villagers &amp; Co." textAlignment="LEFT" underline="true">
+      <effect>
+        <Reflection />
+      </effect>
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Label>
+    <AnchorPane layoutX="0.0" layoutY="62.0" minHeight="75.0" prefHeight="75.0" prefWidth="320.0">
+      <children>
+        <TextField fx:id="txtUser" layoutX="83.0" layoutY="1.0" prefWidth="155.0" promptText="Username" />
+        <PasswordField id="passPass" fx:id="txtPass" layoutX="83.0" layoutY="37.0" prefWidth="155.0" promptText="Password" />
+      </children>
+    </AnchorPane>
+    <Button id="btnRegister" fx:id="btnLogin" layoutX="110.0" layoutY="137.0" onAction="#handleLogin" prefWidth="100.0" text="Login" />
+    <Hyperlink fx:id="lblRegister" layoutX="127.0" layoutY="169.0" onAction="#handleRegister" text="Sign up?" textAlignment="CENTER" underline="true" visited="true" />
+    <Label fx:id="lblError" layoutX="83.0" layoutY="198.0" text="- - - - -" />
+  </children>
+</AnchorPane>

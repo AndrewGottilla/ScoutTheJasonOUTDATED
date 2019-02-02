@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="window" blendMode="SRC_OVER" prefHeight="340.0000999999975" prefWidth="320.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="STJ_UserForm.UserRegistrationFormController">
+  <children>
+    <Label id="null" alignment="TOP_CENTER" layoutX="66.0" layoutY="14.0" text="Traverse Villagers &amp; Co." textAlignment="LEFT" underline="true">
+      <effect>
+        <Reflection />
+      </effect>
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Label>
+    <AnchorPane layoutX="0.0" layoutY="62.0" prefHeight="200.0" prefWidth="320.0">
+      <children>
+        <TextField fx:id="txtFirstName" layoutX="83.0" layoutY="5.0" prefWidth="155.0" promptText="First Name" />
+        <TextField fx:id="txtLastName" layoutX="83.0" layoutY="36.0" prefWidth="155.0" promptText="Last Name" />
+        <TextField id="" fx:id="txtEmail" layoutX="83.0" layoutY="67.0" prefWidth="155.0" promptText="Email" />
+        <TextField fx:id="txtUser" layoutX="83.0" layoutY="98.0" prefWidth="155.0" promptText="Username" />
+        <PasswordField id="passPass" fx:id="txtPass" layoutX="83.0" layoutY="129.0" prefWidth="155.0" promptText="Password" />
+        <PasswordField id="passPassConfirm" fx:id="txtPassConfirm" layoutX="83.0" layoutY="160.0" prefWidth="155.0" promptText="Confirm Password" />
+      </children>
+    </AnchorPane>
+    <Button fx:id="btnRegister" layoutX="110.0" layoutY="262.0" onAction="#handleRegister" prefWidth="100.0" text="Register" />
+    <Hyperlink id="lblRegister" fx:id="lblLogin" layoutX="138.0" layoutY="289.0" onAction="#handleLogin" text="Login" textAlignment="CENTER" underline="true" visited="true" />
+    <Label fx:id="idError" layoutX="14.0" layoutY="316.0" prefWidth="292.0" text="" />
+  </children>
+</AnchorPane>
